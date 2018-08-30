@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/type.css" />
+		<link rel="stylesheet" href="css/music.css" />
+		 <!--<script src="https://cdn.bootcss.com/analytics.js/2.9.1/analytics.min.js"></script>
+		<script src="../js/typed.js" type="text/javascript" charset="utf-8"></script>
+		 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
+		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+		<script type="text/javascript" src="js/typed.js" ></script>
+		<!--<script type="text/javascript" src="js/snow.js" ></script>-->
+			<style type="text/css">
+				span{
+					display: block;
+				}
+				/*body{
+					background: url(../img/bg.jpg) fixed center center no-repeat ;
+					background: cover;
+					font-size: 26px;
+					color: #ffffff;
+					text-align: center;
+				}*/
+				/*#holder{
+					margin-top: 200px;
+				}*/
+				button{
+					width: 100px;
+					height: 32px;
+					text-align: center;
+					line-height: 32px;
+					background: deepskyblue;
+					color: #ffffff;
+					position: absolute;
+					top: 800px;
+					right: 300px;
+					outline: none;
+					border: none;
+					border-radius: 5px;
+				}
+				.loading{
+					text-align: center;
+					margin-top: 200px;
+					color: #ffffff;
+				}
+				.la{
+					position: relative;
+					left: 50%;
+					}
+				.la div{
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+				position: absolute;
+				left: 0;
+				top: 0;
+				border: 2px solid #e5e5e5;
+				border-bottom-color: transparent;
+				border-top-color: transparent;
+				border-radius: 100%;
+				height: 35px;
+				width: 35px;
+				-webkit-animation: rotate 1s 0s ease-in-out infinite;
+				animation: rotate 1s 0s ease-in-out infinite;
+			}
+	        .la div:last-child{
+	        	display: inline-block;
+	        	top: 10px;
+	        	left: 10px;
+	        	width: 15px;
+	        	height: 15px;
+	        	-webkit-animation-duration: 0.5s;
+	        	animation-duration: 0.5s;
+	        	border-color: #e5e5e5 transparent #e5e5e5 transparent;
+	        	-webkit-animation-direction: reverse;
+	        	animation-direction: reverse;
+	        }
+	      
+	       			@keyframes rotate {
+	       		0% {
+	       			-webkit-transform: rotate(0deg) scale(1);
+	       			transform: rotate(0deg) scale(1);
+	       		}
+	       		50% {
+	       			-webkit-transform: rotate(180deg) scale(0.6);
+	       			transform: rotate(180deg) scale(0.6);
+	       		}
+	       		100% {
+	       			-webkit-transform: rotate(360deg) scale(1);
+	       			transform: rotate(360deg) scale(1);
+   
+}
+
+              
+
+
+			</style>	
+	</head>
+	<body>
+		<section class="music">
+			<audio autoplay loop id="a1">
+				<source src="img/005.mp3"></source>				
+			</audio>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</section>
+	<!--
+    	作者：13704059677@163.com
+    	时间：2018-08-01
+    	描述：首页-typed
+    -->	
+      <div id="holder" >
+          <span id="story"></span>
+          <span id="story1"></span>          
+          <span id="story2"></span>
+          <div id="kick"></div>
+      </div>
+		<button id="tab">点击跳转</button>
+	<!--
+                        作者：13704059677@163.com
+                        时间：2018-08-01
+                         描述：过度-snow
+    -->
+        <div class="loading" style="display: none;">
+        	<div class="loading_t">
+        		<h1>个人简历</h1>
+        		<p class="title">页面正在加载中，请稍候...</p>
+        		<div class="la">
+        			<div></div>
+        			<div></div>
+        		</div>
+        	</div>
+        </div>
+		
+	</body>
+	
+	<script type="text/javascript">
+			
+           $(function(){
+            var weekdays = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+            var dayOfWeekIndex = (new Date()).getDay();
+            var dayOfWeek = weekdays[dayOfWeekIndex];
+            var dayOfWeekPastIndex = Math.floor(weekdays.length * Math.random());
+            var dayOfWeekPast;
+            var hourOfDay = new Date().getHours();
+            var timeOfDay;
+            // choose day of week other than current one
+            if (dayOfWeekPastIndex == dayOfWeekIndex) {
+              dayOfWeekPast = weekdays[(dayOfWeekPastIndex + 1) % weekdays.length];
+            } else {
+              dayOfWeekPast = weekdays[dayOfWeekPastIndex];
+            }
+            // assign time of day to the hour
+            if ((hourOfDay >= 4) && (hourOfDay <= 11)) {
+              timeOfDay = "早上";
+            } else if ((hourOfDay >= 12) && (hourOfDay <= 16)) {
+              timeOfDay = "下午";
+            } else { 
+              timeOfDay = "晚上";
+            }
+            // make conversation
+            $('#story').typed({
+                strings: ["Hello！^1500 欢迎来到我的主页^1000\n在这个" + dayOfWeek + "的" + timeOfDay + "我们在这里相遇^1000\n我要介绍一下自己.^1000\n我就是一个程序员.^1000\n平时也没什么爱好.^1000\n我有一个理想，那就是.^1000.^1000"],
+                typeSpeed: 60,
+                backDelay: 800,
+                loop: false,
+                loopCount: false,
+                showCursor:false,
+              
+                callback: function(){
+                  	$('#story1').typed({
+                      	strings: ["金钱与美女,^1000额...","出了点小故障,应该是","事业和爱情.^1000\n我爱写代码.^1000\n还爱上网寻找那些很cool的东西.^1000\n嘿嘿嘿...^2000\n如果想要更多的了解我的话.^1000\n^1000\n点击右下角按钮>>进入我的个人主页吧"],
+                      	typeSpeed: 80,
+                      	backDelay: 500,
+                      	loop: false,
+                      	loopCount: false,
+                      
+                  	});
+                }
+            });
+            
+            $('#tab').click(function(){
+            	console.log(1)
+            	$('#holder').hide(1000);
+            	$(this).hide()
+            	$('body').css('background','#000000');
+            	$('.loading').show();
+            	
+            	jQuery(document).ready(function(){
+                   setTimeout(function(){
+                   	location.href="myResume.html"
+                   } ,2000);
+                         //这里实现延迟5秒跳转
+                    
+            
+                })
+            })
+            
+            $('.music').click(function(){
+            	
+            	if($('#a1').get(0).paused){
+            		$('audio').get(0).play();
+            		$('music ul').find('li').each(function(){
+            			$(this).classList.remove('muted')
+            		})
+            	}else{
+            		$('audio').get(0).pause();
+            		                		
+            	}
+            })
+            
+   
+            })
+         
+          
+		  
+	       
+          
+	     
+       
+		</script>
+</html>
