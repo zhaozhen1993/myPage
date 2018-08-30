@@ -1,20 +1,23 @@
 $(function(){
-	var oc=$('#oC');
+	function get(q ,num){
+		var oc=$(q);
 	
 	var ogc=oc.get(0).getContext('2d');
 	var x=oc.get(0).width/2;
 	var y=oc.get(0).height/2;
-	var rad=Math.PI/100;
-	var speed=0.1
+	var rad=Math.PI*2/100;
+	var r=100;
+	var speed=0.1;
+	
 	
 	
 	function blueCircle(n){
 		ogc.save();
-	    ogc.strokeStyle='#fff';
+	    ogc.strokeStyle='#2C3E50';
 	   
-	    ogc.lineWidth=5;
+	    ogc.lineWidth=10;
 	    ogc.beginPath();
-	    ogc.arc(x,y,100,-Math.PI/2, -Math.PI/2 +n*rad,false);
+	    ogc.arc(x,y,r-4,-Math.PI/2,  n*rad-Math.PI/2,false);
 	    ogc.stroke();
 	    ogc.closePath()
 	    ogc.restore();
@@ -25,10 +28,10 @@ $(function(){
 	function redCircle(){
 		ogc.save();
 		ogc.beginPath();
-	    ogc.strokeStyle='red';
-	    ogc.lineWidth=2;
+	    ogc.strokeStyle='#DDDDDD';
+	    ogc.lineWidth=10;
 	   
-	    ogc.arc(x,y,100,0,360*Math.PI/180,false);
+	    ogc.arc(x,y,r-4,0,2*Math.PI,false);
 	    ogc.stroke();
 	    ogc.closePath()
 	    ogc.restore();
@@ -36,7 +39,7 @@ $(function(){
 	
 	function textCricle(n){
 		ogc.save();
-	    ogc.strokeStyle='#ffffff';
+	    ogc.strokeStyle='#2C3E50';
 	    ogc.font='40px Arial'
 	   
 	    ogc.strokeText(n.toFixed(0)+"%", x-25, y+10)
@@ -54,7 +57,7 @@ $(function(){
 //          if(speed > 100) speed = 0;
 //          speed += 0.1;
 //      }());
-     t(30);
+     t(num);
     function t(s){    
     var timer=setInterval(function(){
     	 ogc.clearRect(0, 0, oc.get(0).width, oc.get(0).height);
@@ -66,7 +69,11 @@ $(function(){
          if(speed>=s){
          	clearInterval(timer);
          }
-    },10)
+    },5)
     }
-	
+	}
+	get('#oC',70);
+	get('#oC1',80)
+	get('#oC2',70)
+	get('#oC3',70)
 })
