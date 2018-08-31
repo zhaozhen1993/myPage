@@ -73,7 +73,7 @@ body{
 }
 /*个人信息*/
 .section_1{
-	background: url(../img/bg/bg2.jpg) no-repeat;  
+	background: url(../img/bg/bg3.jpg) no-repeat;  
     position: fixed;
     left: 0;
     top: 0;
@@ -131,6 +131,11 @@ table{
 td:nth-of-type(even){
 	color: orange;
 }
+.text1 p{
+	text-align: left;
+}
+
+
 /*专业技能*/
 .skill{
 	background: url(../img/bg/bg3.jpg) no-repeat;
@@ -142,7 +147,7 @@ td:nth-of-type(even){
 	width: 100%;
 	padding-top: 200px;
 }
-.skill h3{
+.skill h3,.project h3{
 	text-align: center;
 	color: #2c3e50;
 	font-size: 30px;letter-spacing: 2px;
@@ -159,4 +164,47 @@ td:nth-of-type(even){
 	text-align: center;
 	color: #E87E04;
 	font-size: 25px;
+}
+
+
+.project{
+	padding-top: 200px;
+}
+.project .row{
+	margin-top: 20px;
+}
+.project .col-md-3{
+	position: relative;
+	padding: 0 10px ;
+	transition: .5s;
+}
+.img-m{
+	overflow: hidden;
+	
+}
+.project .col-md-3:hover{
+	transform: scale(1.1);
+	transition: .5s;
+}
+.list-title{
+	position: absolute;
+	left: 0 ;
+	top: 0px;
+	padding-top: 50px;
+	opacity: 0;
+	background: rgba(0,0,0,0.6);
+	margin: 0 10px;
+	height: 100%;
+	cursor: pointer;
+}
+.list-title p{
+	padding: 10px 25px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.list-title span{
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	color: #FFFFFF;
 }

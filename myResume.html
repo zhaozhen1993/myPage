@@ -7,7 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 		<link rel="stylesheet" href="css/myResume.css" />
+		<link rel="stylesheet" href="css/animate.css" />
 		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+		<script type="text/javascript" src="js/wow.min.js" ></script>
 		<script src="js/canvas.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -15,21 +17,21 @@
 		<div class="container-fluid">
 		<div class="container">
 			<div class="logo"></div>
-			<ul>
+			<ul class="tabpage">
 				<li><a href="javascript::">个人信息</a></li>
 				<li><a href="javascript::">专业技能</a></li>
-				<li><a href="javascript::">项目经验</a></li>
+				<li><a href="javascript::">作品展示</a></li>
 				<li><a href="javascript::">联系方式</a></li>
 				<li><a href="javascript::">自我评价</a></li>
 			</ul>
 		</div>
 		</div>
 		<!--个人信息-->
-		<div class="section_1">
+		<div class="section_1 page" >
 			<div class="container">
-				<div class="remsum">
-					<h2>个人信息</h2>
-					<div class="remsum_content">
+				<div class="remsum wow rollIn" data-wow-delay = "0.5s">
+					<h2 class="wow rollIn"data-wow-delay = "0.8s">个人信息</h2>
+					<div class="remsum_content wow rollIn" data-wow-delay = "1s">
 						<table>
 							
 							<tbody >
@@ -62,162 +64,34 @@
 									<td>职业</td>
 									<td colspan="2">Web前端</td>									
 								</tr>
-							</tbody>
-							<tbody >
-								<tr><th colspan="6">基本信息</th></tr>
-								<tr>
-									<td>姓名</td>
-									<td>赵震</td>
-									<td>性别</td>
-									<td>男</td>
-									<td>出生日期</td>
-									<td>1993-08-23</td>
+								<tr class="text1">
+									<td>专业技能</td>
+									<td colspan="6">
+										<p>1.了解JavaScript语言。</p>
+										<p>2.熟练运用Photoshop、dreamweaver、Chrome等常用网页设计制作软件。</p>
+										<p>3.精通HTML+CSS网页布局与样式，了解HTML5与CSS3.0。</p>
+										<p>4.有一定的网页设计能力，偏向欧美简约风格。</p>
+									</td>
 								</tr>
-								<tr>
-									<td>民族</td>
-									<td>满</td>
-									<td>住址</td>
-									<td >武汉江夏区大花岭</td>
-									<td>毕业时间</td>
-									<td >2016</td>
-								</tr>
-								<tr>
-									<td>手机</td>
-									<td colspan="2">137 0405 9677</td>
-									<td>邮箱</td>
-									<td colspan="2">956632755@qq.com</td>									
-								</tr>
-								<tr>
-									<td>学历</td>
-									<td colspan="2">本科</td>
-									<td>职业</td>
-									<td colspan="2">Web前端</td>									
+								<tr class="text1">
+									<td>工作经历</td>
+									<td colspan="6">
+										<p style="font-size: 16px; font-weight: bold;">2017/6-2018/5武汉晃游网络</p>
+										<p>1.站内更新，友链换取，通过发布原创及伪原创增加百度收录量，通过网络媒体（微博，社区，经验等）提高网站及产品曝光度</p>
+										<p>2.微信公众号运营，发布公众号文章，曾根据时下热点推文阅读量达到25万+，新关注量较之前增加60%</p>
+										<p>3.对各大游戏渠道进行月末CPS结算及跟进工作</p>
+										<p>4.对网站流量进行统计分析总结</p>
+										<p>5广告洽谈合作</p>
+										<p></p>
+										<p style="font-size: 16px;font-weight: bold;">2016/10-2017/5环亚联合科技公司</p>
+										<p>在公司主要负责分配任务、购买资料，广告任务推广测试；</p>
+										<p>1登录国外网站进行国外推广任务点击。</p>
+										<p>2在国外任务联盟网站获取外部链接悬挂到公司国外网站上。</p>
+										<p>3将需推广的广告任务banner挂在公司网页。</p>
+									</td>
 								</tr>
 							</tbody>
-							<tbody >
-								<tr><th colspan="6">基本信息</th></tr>
-								<tr>
-									<td>姓名</td>
-									<td>赵震</td>
-									<td>性别</td>
-									<td>男</td>
-									<td>出生日期</td>
-									<td>1993-08-23</td>
-								</tr>
-								<tr>
-									<td>民族</td>
-									<td>满</td>
-									<td>住址</td>
-									<td >武汉江夏区大花岭</td>
-									<td>毕业时间</td>
-									<td >2016</td>
-								</tr>
-								<tr>
-									<td>手机</td>
-									<td colspan="2">137 0405 9677</td>
-									<td>邮箱</td>
-									<td colspan="2">956632755@qq.com</td>									
-								</tr>
-								<tr>
-									<td>学历</td>
-									<td colspan="2">本科</td>
-									<td>职业</td>
-									<td colspan="2">Web前端</td>									
-								</tr>
-							</tbody>
-							<tbody >
-								<tr><th colspan="6">基本信息</th></tr>
-								<tr>
-									<td>姓名</td>
-									<td>赵震</td>
-									<td>性别</td>
-									<td>男</td>
-									<td>出生日期</td>
-									<td>1993-08-23</td>
-								</tr>
-								<tr>
-									<td>民族</td>
-									<td>满</td>
-									<td>住址</td>
-									<td >武汉江夏区大花岭</td>
-									<td>毕业时间</td>
-									<td >2016</td>
-								</tr>
-								<tr>
-									<td>手机</td>
-									<td colspan="2">137 0405 9677</td>
-									<td>邮箱</td>
-									<td colspan="2">956632755@qq.com</td>									
-								</tr>
-								<tr>
-									<td>学历</td>
-									<td colspan="2">本科</td>
-									<td>职业</td>
-									<td colspan="2">Web前端</td>									
-								</tr>
-							</tbody>
-2							<tbody >
-								<tr><th colspan="6">基本信息</th></tr>
-								<tr>
-									<td>姓名</td>
-									<td>赵震</td>
-									<td>性别</td>
-									<td>男</td>
-									<td>出生日期</td>
-									<td>1993-08-23</td>
-								</tr>
-								<tr>
-									<td>民族</td>
-									<td>满</td>
-									<td>住址</td>
-									<td >武汉江夏区大花岭</td>
-									<td>毕业时间</td>
-									<td >2016</td>
-								</tr>
-								<tr>
-									<td>手机</td>
-									<td colspan="2">137 0405 9677</td>
-									<td>邮箱</td>
-									<td colspan="2">956632755@qq.com</td>									
-								</tr>
-								<tr>
-									<td>学历</td>
-									<td colspan="2">本科</td>
-									<td>职业</td>
-									<td colspan="2">Web前端</td>									
-								</tr>
-							</tbody>
-							<tbody >
-								<tr><th colspan="6">基本信息</th></tr>
-								<tr>
-									<td>姓名</td>
-									<td>赵震</td>
-									<td>性别</td>
-									<td>男</td>
-									<td>出生日期</td>
-									<td>1993-08-23</td>
-								</tr>
-								<tr>
-									<td>民族</td>
-									<td>满</td>
-									<td>住址</td>
-									<td >武汉江夏区大花岭</td>
-									<td>毕业时间</td>
-									<td >2016</td>
-								</tr>
-								<tr>
-									<td>手机</td>
-									<td colspan="2">137 0405 9677</td>
-									<td>邮箱</td>
-									<td colspan="2">956632755@qq.com</td>									
-								</tr>
-								<tr>
-									<td>学历</td>
-									<td colspan="2">本科</td>
-									<td>职业</td>
-									<td colspan="2">Web前端</td>									
-								</tr>
-							</tbody>
+							
 						</table>
 						
 					</div>
@@ -225,23 +99,23 @@
 			</div>
 		</div>
 		<!--专业技能-->
-		<div class="skill">
+		<div class="skill  page" style="display: none;">
 			<div class="container ">
-				<h3>技术掌握</h3>
+				<h3 class="wow bounceInDown" data-wow-delay = ".5s">技术掌握</h3>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 wow rollIn" data-wow-delay="1.5s">
 						<a>HTML(5)/css(3)</a>
 						<canvas id="oC" width=200 height=200></canvas>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 wow rollIn" data-wow-delay="1.2s">
 						<a>javcascript</a>
 						<canvas id="oC1" width=200 height=200></canvas>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 wow lightSpeedIn"data-wow-delay="1.2s">
 						<a>jquery</a>
 						<canvas id="oC2" width=200 height=200></canvas>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 wow lightSpeedIn"data-wow-delay="1.5s">
 						<a>bootstrap</a>
 						<canvas id="oC3" width=200 height=200></canvas>
 					</div>
@@ -250,7 +124,95 @@
 																			     
 			</div>
 		</div>
-		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	
+	    <div class="project  page" style="display: none;">
+			<div class="container ">
+				<h3>项目经验</h3>
+				<div class="row">
+					<div class="col-md-3 wow rollIn">
+						<div class="img-m">
+							<img src="img/bg/01.jpg" class="img-responsive" />
+						</div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow bounceInDown" data-wow-duration="1.5s">
+						<div class="img-m"><img src="img/bg/02.jpg" class="img-responsive" /></div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow bounceInDown" data-wow-duration="1.5s">
+						<div class="img-m"><img src="img/bg/03.jpg" class="img-responsive" /></div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow rollIn">
+						<div class="img-m"><img src="img/bg/02.jpg" class="img-responsive" /></div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-md-3 wow rollIn">
+						<div class="img-m">
+							<img src="img/bg/01.jpg" class="img-responsive" />
+						</div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow bounceInDown" data-wow-duration="1s">
+						<div class="img-m"><img src="img/bg/03.jpg" class="img-responsive" /></div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow bounceInDown" data-wow-duration="1s">
+						<div class="img-m"><img src="img/bg/01.jpg" class="img-responsive" /></div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow rollIn">
+						<div class="img-m"><img src="img/bg/02.jpg" class="img-responsive" /></div>
+						<div class="list-title">
+							<span>商城类页面</span>
+							<p>购物车结算jq，订单的选择或删除、金额的计算。</p>
+						</div>
+					</div>
+				</div>																     
+			</div>
+		</div>
+	    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload=function(){
+				new WOW().init();
+				
+			}
+		</script>
 	</body>
 </html>

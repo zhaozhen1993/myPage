@@ -65,7 +65,7 @@ $(function(){
          textCricle(speed);          
          blueCircle(speed);
          speed+=0.1;
-         console.log(s)
+         
          if(speed>=s){
          	clearInterval(timer);
          }
@@ -76,4 +76,33 @@ $(function(){
 	get('#oC1',80)
 	get('#oC2',70)
 	get('#oC3',70)
+
+
+
+
+
+   $('.list-title').mouseenter(function(){
+   	console.log(11)
+   		$(this).stop().animate({opacity:0.9},500);
+   })
+   $('.list-title').mouseleave(function(){
+   	$(this).stop().animate({opacity:0},500);
+   })
+   
+
+    $('.tabpage li').click(function(){
+    	$('.page').eq($(this).index()).show().siblings('.page').hide()
+    })
+
+
+
+
+
+
+
+
+
+
+
+
 })
